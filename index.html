@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Generator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>String Generator</h1>
+        <form>
+            <label for="num-letters">Liczba literek (1-10):</label>
+            <input
+                type="number"
+                id="num-letters"
+                min="1"
+                max="10"
+                value="5"
+            /><br /><br />
+            <label for="num-digits-1"
+                >Liczba cyferek po literkach (1-15):</label
+            >
+            <input
+                type="number"
+                id="num-digits-1"
+                min="1"
+                max="15"
+                value="5"
+            /><br /><br />
+            <label for="num-digits-2"
+                >Liczba cyferek po drugim "/" (1-15):</label
+            >
+            <input
+                type="number"
+                id="num-digits-2"
+                min="1"
+                max="15"
+                value="5"
+            /><br /><br />
+            <label for="num-strings"
+                >Liczba ciągów do wygenerowania (1-100):</label
+            >
+            <input
+                type="number"
+                id="num-strings"
+                min="1"
+                max="100"
+                value="10"
+            /><br /><br />
+            <button id="generate-btn">Generuj</button>
+            <button id="reset-btn">Resetuj</button>
+        </form>
+        <div id="output"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
